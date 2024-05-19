@@ -1,0 +1,82 @@
+// USER VARIABLES SECTION
+
+$accent: blue  // Accent Color
+$fontsize: 16px // Body Font Size
+//$textcolor: #333 // Text Color
+//$lineheight: 1.65 // Document Line Height
+$userfont: "Montserrat", sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+// Jost
+@include font('Jost', normal, 100, '../fonts/Jost/Jost-Thin.woff2')
+@include font('Jost', italic, 100, '../fonts/Jost/Jost-ThinItalic.woff2')
+@include font('Jost', normal, 200, '../fonts/Jost/Jost-ExtraLight.woff2')
+@include font('Jost', italic, 200, '../fonts/Jost/Jost-ExtraLightItalic.woff2')
+@include font('Jost', normal, 300, '../fonts/Jost/Jost-Light.woff2')
+@include font('Jost', italic, 300, '../fonts/Jost/Jost-LightItalic.woff2')
+@include font('Jost', normal, 400, '../fonts/Jost/Jost-Regular.woff2')
+@include font('Jost', italic, 400, '../fonts/Jost/Jost-Italic.woff2')
+@include font('Jost', normal, 500, '../fonts/Jost/Jost-Medium.woff2')
+@include font('Jost', italic, 500, '../fonts/Jost/Jost-MediumItalic.woff2')
+@include font('Jost', normal, 600, '../fonts/Jost/Jost-SemiBold.woff2')
+@include font('Jost', italic, 600, '../fonts/Jost/Jost-SemiBoldItalic.woff2')
+@include font('Jost', normal, 700, '../fonts/Jost/Jost-Bold.woff2')
+@include font('Jost', italic, 700, '../fonts/Jost/Jost-BoldItalic.woff2')
+@include font('Jost', normal, 800, '../fonts/Jost/Jost-ExtraBold.woff2')
+@include font('Jost', italic, 800, '../fonts/Jost/Jost-ExtraBoldItalic.woff2')
+@include font('Jost', normal, 900, '../fonts/Jost/Jost-Black.woff2')
+@include font('Jost', italic, 900, '../fonts/Jost/Jost-BlackItalic.woff2')
+
+// Comforter
+@include font('Comforter', normal, 400, '../fonts/Comforter/Comforter-Regular.woff2')
+
+// Montserrat
+@include font('Montserrat', normal, 100, '../fonts/Montserrat/Montserrat-Thin.woff2')
+@include font('Montserrat', italic, 100, '../fonts/Montserrat/Montserrat-ThinItalic.woff2')
+@include font('Montserrat', normal, 200, '../fonts/Montserrat/Montserrat-ExtraLight.woff2')
+@include font('Montserrat', italic, 200, '../fonts/Montserrat/Montserrat-ExtraLightItalic.woff2')
+@include font('Montserrat', normal, 300, '../fonts/Montserrat/Montserrat-Light.woff2')
+@include font('Montserrat', italic, 300, '../fonts/Montserrat/Montserrat-LightItalic.woff2')
+@include font('Montserrat', normal, 400, '../fonts/Montserrat/Montserrat-Regular.woff2')
+@include font('Montserrat', italic, 400, '../fonts/Montserrat/Montserrat-Italic.woff2')
+@include font('Montserrat', normal, 500, '../fonts/Montserrat/Montserrat-Medium.woff2')
+@include font('Montserrat', italic, 500, '../fonts/Montserrat/Montserrat-MediumItalic.woff2')
+@include font('Montserrat', normal, 600, '../fonts/Montserrat/Montserrat-SemiBold.woff2')
+@include font('Montserrat', italic, 600, '../fonts/Montserrat/Montserrat-SemiBoldItalic.woff2')
+@include font('Montserrat', normal, 700, '../fonts/Montserrat/Montserrat-Bold.woff2')
+@include font('Montserrat', italic, 700, '../fonts/Montserrat/Montserrat-BoldItalic.woff2')
+@include font('Montserrat', normal, 800, '../fonts/Montserrat/Montserrat-ExtraBold.woff2')
+@include font('Montserrat', italic, 800, '../fonts/Montserrat/Montserrat-ExtraBoldItalic.woff2')
+@include font('Montserrat', normal, 900, '../fonts/Montserrat/Montserrat-Black.woff2')
+@include font('Montserrat', italic, 900, '../fonts/Montserrat/Montserrat-BlackItalic.woff2')
+
+// GENERAL CSS SETTINGS
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+//	line-height: $lineheight
+	//color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
