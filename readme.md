@@ -11,7 +11,6 @@
 
 <p>Clone into the current folder and remove all unnecessary (one command):</p>
 
-
 <ol>
  <strong>AlexOptimizedHTML 5</strong> from GitHub</li>
 	<li>Install Node Modules: <strong>npm i</strong></li>
@@ -149,3 +148,27 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 <ol>
 	<li>Long Preprocessor compile: Disable the "safe write" option in PHPStorm/WebStorm settings.</li>
 </ol>
+
+# новые классы
+
+// .active-cumb
+
+// .third_line
+
+// .third_line-link
+
+// .fourth_line
+
+// .breadcrumbs\_\_list
+
+// .breadcrumbs\_\_item
+
+// .breadcrumbs\_\_link
+
+// .breadcrumbs\_\_icon
+
+// .mobile_header-banner
+
+// header .second_line
+
+// .active-cumb - переключение хлебных крошек

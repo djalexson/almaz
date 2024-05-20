@@ -1,5 +1,4 @@
 /*20.05*/
-
 .third {
   &_line {
     display: none;
@@ -13,14 +12,15 @@
 
   &_line-link {
     color: $text-dark;
-    font-family: $m;
+    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     padding: 0px 16px;
     position: relative;
     &:after {
       content: '';
-      background: url('../img//NewImg/third-line-link.svg') center / cover;
+      background: url('../../../images/src/NewImg/third-line-link.svg') center /
+        cover;
       position: absolute;
       top: 4px;
       right: 0;
@@ -36,15 +36,8 @@
       background-color: $breadcumbs-bg;
     }
   }
-  &_line-banner {
-  }
-
-  &_line-img {
-  }
-
-  &_line-header {
-  }
 }
+
 .breadcrumbs {
   &__list {
     padding: 10px 1px;
@@ -75,7 +68,8 @@
 
     &:after {
       content: '';
-      background: url('../img/NewImg/breadcrumbs.svg') center / cover;
+      background: url('../../../images/src/NewImg/breadcrumbs.svg') center /
+        cover;
       width: 7px;
       height: 12px;
       position: absolute;
@@ -90,7 +84,7 @@
     }
 
     @media (max-width: 768px) {
-      margin-right: px;
+      margin-right: 6px;
     }
   }
   &__icon {
@@ -101,12 +95,12 @@
   &__link {
     padding-right: 21px;
     color: inherit;
-    font-family: $mm;
+    font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     @media (max-width: 768px) {
       font-size: 12px;
-      padding-right: 18px;
+      padding-right: 16px;
     }
   }
 }
@@ -116,4 +110,6 @@
   object-fit: cover;
 }
 
-// .active-cumb
+header .second_line {
+  margin-bottom: 33px;
+}
