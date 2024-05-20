@@ -1,0 +1,119 @@
+/*20.05*/
+
+.third {
+  &_line {
+    display: none;
+    margin-bottom: 10px;
+    @media (max-width: 767.9px) {
+      & {
+        display: block;
+      }
+    }
+  }
+
+  &_line-link {
+    color: $text-dark;
+    font-family: $m;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0px 16px;
+    position: relative;
+    &:after {
+      content: '';
+      background: url('../img//NewImg/third-line-link.svg') center / cover;
+      position: absolute;
+      top: 4px;
+      right: 0;
+      width: 6px;
+      height: 12px;
+    }
+  }
+}
+
+.fourth {
+  &_line {
+    @media (max-width: 768px) {
+      background-color: $breadcumbs-bg;
+    }
+  }
+  &_line-banner {
+  }
+
+  &_line-img {
+  }
+
+  &_line-header {
+  }
+}
+.breadcrumbs {
+  &__list {
+    padding: 10px 1px;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1440px) {
+      margin-left: 22px;
+    }
+
+    @media (max-width: 1200px) {
+      margin-left: 74px;
+    }
+    @media (max-width: 1024px) {
+      margin-left: 0px;
+    }
+    @media (max-width: 768px) {
+      padding: 15px 15px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    color: $breadcumbs;
+    margin-right: 16px;
+
+    &:after {
+      content: '';
+      background: url('../img/NewImg/breadcrumbs.svg') center / cover;
+      width: 7px;
+      height: 12px;
+      position: absolute;
+      top: 5px;
+      right: 0;
+    }
+    &.active-cumb {
+      color: $text-dark;
+      &:after {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      margin-right: px;
+    }
+  }
+  &__icon {
+    width: 18px;
+    height: 19px;
+  }
+
+  &__link {
+    padding-right: 21px;
+    color: inherit;
+    font-family: $mm;
+    font-size: 14px;
+    line-height: 20px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+      padding-right: 18px;
+    }
+  }
+}
+
+.mobile_header-banner {
+  padding: 0px 10px;
+  object-fit: cover;
+}
+
+// .active-cumb
