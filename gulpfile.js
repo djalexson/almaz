@@ -85,7 +85,7 @@ function styles() {
 		.pipe(eval(`${preprocessor}glob`)())
 		.pipe(eval(preprocessor)({ 'include css': true }))
 		.pipe(postCss([
-			autoprefixer({ grid: 'autoplace' }),
+			///autoprefixer({ grid: 'autoplace' }),
 			cssnano({ preset: ['default', { discardComments: { removeAll: true } }] })
 		]))
 		.pipe(concat('app.min.css'))
@@ -106,7 +106,8 @@ function buildcopy() {
 		'{app/js,app/css}/*.min.*',
 		'app/images/**/*.*',
 		'!app/images/src/**/*',
-		'app/fonts/**/*'
+		'app/fonts/**/*',
+		'app/libs/**/*'
 	], { base: 'app/' })
 	.pipe(dest('dist'))
 }

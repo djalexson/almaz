@@ -1,68 +1,154 @@
 // USER VARIABLES SECTION
 
-$accent: blue  // Accent Color
+$accent: #257AE8  // Accent Color
 $fontsize: 16px // Body Font Size
 //$textcolor: #333 // Text Color
 //$lineheight: 1.65 // Document Line Height
-$userfont: "Montserrat", sans-serif // User Font Family
+$userfont: "Montserrat-all", sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
+$breadcumbs: #808080
+$breadcumbs-active: #000000
+$breadcumbs-bg: #f2f2f2
+$text-dark: rgb(36, 36, 36)
+$white-bg: rgb(255, 255, 255)
+$bage: rgb(98, 199, 82)
+$sale: rgb(119, 81, 218)
+$product-text: rgb(54, 54, 54)
+$product-oldprace: rgb(152, 152, 152)
+$product-discount: rgb(236, 93, 93)
+$product-btn: rgb(255, 249, 87)
+$few: rgb(204, 147, 95)
+$count: rgb(95, 204, 119)
 @mixin font($fname, $fstyle, $fweight, $furl)
 	@font-face
 		font-family: $fname
 		font-style: $fstyle
 		font-weight: $fweight
 		src: url($furl) format('woff2')
+
+	
+//Quilin
+@include font('Quilin-all', normal, 400, '../fonts/Quilin/Quilin.woff2')
 // Jost
-@include font('Jost', normal, 100, '../fonts/Jost/Jost-Thin.woff2')
-@include font('Jost', italic, 100, '../fonts/Jost/Jost-ThinItalic.woff2')
-@include font('Jost', normal, 200, '../fonts/Jost/Jost-ExtraLight.woff2')
-@include font('Jost', italic, 200, '../fonts/Jost/Jost-ExtraLightItalic.woff2')
-@include font('Jost', normal, 300, '../fonts/Jost/Jost-Light.woff2')
-@include font('Jost', italic, 300, '../fonts/Jost/Jost-LightItalic.woff2')
-@include font('Jost', normal, 400, '../fonts/Jost/Jost-Regular.woff2')
-@include font('Jost', italic, 400, '../fonts/Jost/Jost-Italic.woff2')
-@include font('Jost', normal, 500, '../fonts/Jost/Jost-Medium.woff2')
-@include font('Jost', italic, 500, '../fonts/Jost/Jost-MediumItalic.woff2')
-@include font('Jost', normal, 600, '../fonts/Jost/Jost-SemiBold.woff2')
-@include font('Jost', italic, 600, '../fonts/Jost/Jost-SemiBoldItalic.woff2')
-@include font('Jost', normal, 700, '../fonts/Jost/Jost-Bold.woff2')
-@include font('Jost', italic, 700, '../fonts/Jost/Jost-BoldItalic.woff2')
-@include font('Jost', normal, 800, '../fonts/Jost/Jost-ExtraBold.woff2')
-@include font('Jost', italic, 800, '../fonts/Jost/Jost-ExtraBoldItalic.woff2')
-@include font('Jost', normal, 900, '../fonts/Jost/Jost-Black.woff2')
-@include font('Jost', italic, 900, '../fonts/Jost/Jost-BlackItalic.woff2')
+@include font('Jost-all', normal, 100, '../fonts/Jost/Jost-Thin.woff2')
+@include font('Jost-all', italic, 100, '../fonts/Jost/Jost-ThinItalic.woff2')
+@include font('Jost-all', normal, 200, '../fonts/Jost/Jost-ExtraLight.woff2')
+@include font('Jost-all', italic, 200, '../fonts/Jost/Jost-ExtraLightItalic.woff2')
+@include font('Jost-all', normal, 300, '../fonts/Jost/Jost-Light.woff2')
+@include font('Jost-all', italic, 300, '../fonts/Jost/Jost-LightItalic.woff2')
+@include font('Jost-all', normal, 400, '../fonts/Jost/Jost-Regular.woff2')
+@include font('Jost-all', italic, 400, '../fonts/Jost/Jost-Italic.woff2')
+@include font('Jost-all', normal, 500, '../fonts/Jost/Jost-Medium.woff2')
+@include font('Jost-all', italic, 500, '../fonts/Jost/Jost-MediumItalic.woff2')
+@include font('Jost-all', normal, 600, '../fonts/Jost/Jost-SemiBold.woff2')
+@include font('Jost-all', italic, 600, '../fonts/Jost/Jost-SemiBoldItalic.woff2')
+@include font('Jost-all', normal, 700, '../fonts/Jost/Jost-Bold.woff2')
+@include font('Jost-all', italic, 700, '../fonts/Jost/Jost-BoldItalic.woff2')
+@include font('Jost-all', normal, 800, '../fonts/Jost/Jost-ExtraBold.woff2')
+@include font('Jost-all', italic, 800, '../fonts/Jost/Jost-ExtraBoldItalic.woff2')
+@include font('Jost-all', normal, 900, '../fonts/Jost/Jost-Black.woff2')
+@include font('Jost-all', italic, 900, '../fonts/Jost/Jost-BlackItalic.woff2')
 
 // Comforter
-@include font('Comforter', normal, 400, '../fonts/Comforter/Comforter-Regular.woff2')
+@include font('Comforter-all', normal, 400, '../fonts/Comforter/Comforter-Regular.woff2')
 
 // Montserrat
-@include font('Montserrat', normal, 100, '../fonts/Montserrat/Montserrat-Thin.woff2')
-@include font('Montserrat', italic, 100, '../fonts/Montserrat/Montserrat-ThinItalic.woff2')
-@include font('Montserrat', normal, 200, '../fonts/Montserrat/Montserrat-ExtraLight.woff2')
-@include font('Montserrat', italic, 200, '../fonts/Montserrat/Montserrat-ExtraLightItalic.woff2')
-@include font('Montserrat', normal, 300, '../fonts/Montserrat/Montserrat-Light.woff2')
-@include font('Montserrat', italic, 300, '../fonts/Montserrat/Montserrat-LightItalic.woff2')
-@include font('Montserrat', normal, 400, '../fonts/Montserrat/Montserrat-Regular.woff2')
-@include font('Montserrat', italic, 400, '../fonts/Montserrat/Montserrat-Italic.woff2')
-@include font('Montserrat', normal, 500, '../fonts/Montserrat/Montserrat-Medium.woff2')
-@include font('Montserrat', italic, 500, '../fonts/Montserrat/Montserrat-MediumItalic.woff2')
-@include font('Montserrat', normal, 600, '../fonts/Montserrat/Montserrat-SemiBold.woff2')
-@include font('Montserrat', italic, 600, '../fonts/Montserrat/Montserrat-SemiBoldItalic.woff2')
-@include font('Montserrat', normal, 700, '../fonts/Montserrat/Montserrat-Bold.woff2')
-@include font('Montserrat', italic, 700, '../fonts/Montserrat/Montserrat-BoldItalic.woff2')
-@include font('Montserrat', normal, 800, '../fonts/Montserrat/Montserrat-ExtraBold.woff2')
-@include font('Montserrat', italic, 800, '../fonts/Montserrat/Montserrat-ExtraBoldItalic.woff2')
-@include font('Montserrat', normal, 900, '../fonts/Montserrat/Montserrat-Black.woff2')
-@include font('Montserrat', italic, 900, '../fonts/Montserrat/Montserrat-BlackItalic.woff2')
+@include font('Montserrat-all', normal, 100, '../fonts/Montserrat/Montserrat-Thin.woff2')
+@include font('Montserrat-all', italic, 100, '../fonts/Montserrat/Montserrat-ThinItalic.woff2')
+@include font('Montserrat-all', normal, 200, '../fonts/Montserrat/Montserrat-ExtraLight.woff2')
+@include font('Montserrat-all', italic, 200, '../fonts/Montserrat/Montserrat-ExtraLightItalic.woff2')
+@include font('Montserrat-all', normal, 300, '../fonts/Montserrat/Montserrat-Light.woff2')
+@include font('Montserrat-all', italic, 300, '../fonts/Montserrat/Montserrat-LightItalic.woff2')
+@include font('Montserrat-all', normal, 400, '../fonts/Montserrat/Montserrat-Regular.woff2')
+@include font('Montserrat-all', italic, 400, '../fonts/Montserrat/Montserrat-Italic.woff2')
+@include font('Montserrat-all', normal, 500, '../fonts/Montserrat/Montserrat-Medium.woff2')
+@include font('Montserrat-all', italic, 500, '../fonts/Montserrat/Montserrat-MediumItalic.woff2')
+@include font('Montserrat-all', normal, 600, '../fonts/Montserrat/Montserrat-SemiBold.woff2')
+@include font('Montserrat-all', italic, 600, '../fonts/Montserrat/Montserrat-SemiBoldItalic.woff2')
+@include font('Montserrat-all', normal, 700, '../fonts/Montserrat/Montserrat-Bold.woff2')
+@include font('Montserrat-all', italic, 700, '../fonts/Montserrat/Montserrat-BoldItalic.woff2')
+@include font('Montserrat-all', normal, 800, '../fonts/Montserrat/Montserrat-ExtraBold.woff2')
+@include font('Montserrat-all', italic, 800, '../fonts/Montserrat/Montserrat-ExtraBoldItalic.woff2')
+@include font('Montserrat-all', normal, 900, '../fonts/Montserrat/Montserrat-Black.woff2')
+@include font('Montserrat-all', italic, 900, '../fonts/Montserrat/Montserrat-BlackItalic.woff2')
 
-// GENERAL CSS SETTINGS
 
+// Fivo Sans
+@include font('FivoSans-all', normal, 100, '../fonts/fivoSans/fivosans-thin.woff2')
+@include font('FivoSans-all', oblique, 100, '../fonts/fivoSans/fivosans-thinoblique.woff2')
+@include font('FivoSans-all', normal, 300, '../fonts/fivoSans/fivosans-light.woff2')
+@include font('FivoSans-all', oblique, 300, '../fonts/fivoSans/fivosans-lightoblique.woff2')
+@include font('FivoSans-all', normal, 400, '../fonts/fivoSans/fivosans-regular.woff2')
+@include font('FivoSans-all', oblique, 400, '../fonts/fivoSans/fivosans-oblique.woff2')
+@include font('FivoSans-all', normal, 500, '../fonts/fivoSans/fivosans-medium.woff2')
+@include font('FivoSans-all', oblique, 500, '../fonts/fivoSans/fivosans-mediumoblique.woff2')
+@include font('FivoSans-all', normal, 700, '../fonts/fivoSans/fivosans-bold.woff2')
+@include font('FivoSans-all', oblique, 700, '../fonts/fivoSans/fivosans-boldoblique.woff2')
+@include font('FivoSans-all', normal, 800, '../fonts/fivoSans/fivosans-heavy.woff2') // предполагая что heavy соответствует 800
+@include font('FivoSans-all', oblique, 800, '../fonts/fivoSans/fivosans-heavyoblique.woff2')
+@include font('FivoSans-all', normal, 900, '../fonts/fivoSans/fivosans-black.woff2')
+@include font('FivoSans-all', oblique, 900, '../fonts/fivoSans/fivosans-blackoblique.woff2')
+
+// Exo 2
+@include font('Exo2-all', normal, 200, '../fonts/Exo2/Exo2-ExtraLight.woff2')
+@include font('Exo2-all', italic, 200, '../fonts/Exo2/Exo2-ExtraLightItalic.woff2')
+@include font('Exo2-all', normal, 300, '../fonts/Exo2/Exo2-Light.woff2')
+@include font('Exo2-all', italic, 300, '../fonts/Exo2/Exo2-LightItalic.woff2')
+@include font('Exo2-all', normal, 400, '../fonts/Exo2/Exo2-Regular.woff2')
+@include font('Exo2-all', italic, 400, '../fonts/Exo2/Exo2-Italic.woff2')
+@include font('Exo2-all', normal, 500, '../fonts/Exo2/Exo2-Medium.woff2')
+@include font('Exo2-all', italic, 500, '../fonts/Exo2/Exo2-MediumItalic.woff2')
+@include font('Exo2-all', normal, 600, '../fonts/Exo2/Exo2-SemiBold.woff2')
+@include font('Exo2-all', italic, 600, '../fonts/Exo2/Exo2-SemiBoldItalic.woff2')
+@include font('Exo2-all', normal, 700, '../fonts/Exo2/Exo2-Bold.woff2')
+@include font('Exo2-all', italic, 700, '../fonts/Exo2/Exo2-BoldItalic.woff2')
+@include font('Exo2-all', normal, 800, '../fonts/Exo2/Exo2-ExtraBold.woff2')
+@include font('Exo2-all', italic, 800, '../fonts/Exo2/Exo2-ExtraBoldItalic.woff2')
+@include font('Exo2-all', normal, 900, '../fonts/Exo2/Exo2-Black.woff2')
+@include font('Exo2-all', italic, 900, '../fonts/Exo2/Exo2-BlackItalic.woff2')
+// Century Gothic
+@include font('CenturyGothic-all', normal, 400, '../fonts/CenturyGothic/CenturyGothic.woff2')
+@include font('CenturyGothic-all', italic, 400, '../fonts/CenturyGothic/CenturyGothic-Italic.woff2')
+@include font('CenturyGothic-all', normal, 700, '../fonts/CenturyGothic/CenturyGothic-Bold.woff2')
+@include font('CenturyGothic-all', italic, 700, '../fonts/CenturyGothic/CenturyGothic-BoldItalic.woff2')
+//Century School
+@include font('CenturySchool-all', normal, 700, '../fonts/CenturySchool/CenturySchool-Bold.woff2')
+@include font('CenturySchool-all', normal, 400, '../fonts/CenturySchool/CenturySchool-Regular.woff2')
+
+// GeologicaRoman
+@include font('GeologicaRoman-all', normal, 400, '../fonts/Geologica/GeologicaRoman-Regular.woff2')
+@include font('GeologicaRoman-all', italic, 400, '../fonts/Geologica/GeologicaRoman-Italic.woff2')
+@include font('GeologicaRoman-all', normal, 500, '../fonts/Geologica/GeologicaRoman-Medium.woff2')
+@include font('GeologicaRoman-all', italic, 500, '../fonts/Geologica/GeologicaRoman-MediumItalic.woff2')
+@include font('GeologicaRoman-all', normal, 700, '../fonts/Geologica/GeologicaRoman-Bold.woff2')
+@include font('GeologicaRoman-all', italic, 700, '../fonts/Geologica/GeologicaRoman-BoldItalic.woff2')
+
+// Geologica
+@include font('Geologica-all', italic, 400, '../fonts/Geologica/Geologica-Italic.woff2')
+@include font('Geologica-all', normal, 500, '../fonts/Geologica/Geologica-Medium.woff2')
+@include font('Geologica-all', italic, 500, '../fonts/Geologica/Geologica-MediumItalic.woff2')
+@include font('Geologica-all', normal, 700, '../fonts/Geologica/Geologica-Bold.woff2')
+@include font('Geologica-all', italic, 700, '../fonts/Geologica/Geologica-BoldItalic.woff2')
+
+// GeologicaCursive
+@include font('GeologicaCursive-all', normal, 400, '../fonts/Geologica/GeologicaCursive-Regular.woff2')
+@include font('GeologicaCursive-all', italic, 400, '../fonts/Geologica/GeologicaCursive-Italic.woff2')
+@include font('GeologicaCursive-all', normal, 500, '../fonts/Geologica/GeologicaCursive-Medium.woff2')
+@include font('GeologicaCursive-all', italic, 500, '../fonts/Geologica/GeologicaCursive-MediumItalic.woff2')
+@include font('GeologicaCursive-all', normal, 700, '../fonts/Geologica/GeologicaCursive-Bold.woff2')
+@include font('GeologicaCursive-all', italic, 700, '../fonts/Geologica/GeologicaCursive-BoldItalic.woff2')		// GENERAL CSS SETTINGS
+:root
+	--main-color-hover:#808080
+	--main-color:#000000
+	--animation: all 0.2s ease-in-out
+	--accent: #257AE8
+	--bdrs:8px
 ::placeholder
-	color: #666
+	color: var(--main-color-hover)
 
 ::selection
-	background-color: $accent
+	background-color: var(--accent)
 	color: #fff
 
 input, textarea
@@ -76,7 +162,7 @@ body
 	font-family: $userfont
 	font-size: $fontsize
 //	line-height: $lineheight
-	//color: $textcolor
+	color: var(	--main-color) 
 	min-width: 320px
 	position: relative
 	overflow-x: hidden

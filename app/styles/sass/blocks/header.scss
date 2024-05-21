@@ -1,0 +1,57 @@
+
+/*20.05*/
+.third {
+  &_line {
+    display: none;
+    margin-bottom: 10px;
+    @media (max-width: 767.9px) {
+      & {
+        display: block;
+      }
+    }
+  }
+
+  &_line-link {
+    color: $text-dark;
+    font-weight: 500;
+    font-family: 'Montserrat-all';
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0px 16px;
+    position: relative;
+    &:after {
+      content: '';
+      background: url('../../../images/src/header/mobile-arrow.svg') center /
+        cover;
+      position: absolute;
+      top: 4px;
+      right: 0;
+      width: 6px;
+      height: 12px;
+    }
+  }
+}
+
+.fourth {
+  &_line {
+    @media (max-width: 768px) {
+      background-color: $breadcumbs-bg;
+    }
+  }
+}
+
+
+@media (min-width: 480px) {
+  .mobile_header-banner {
+    display: none;
+  }
+}
+.mobile_header-banner {
+  display: block;
+  padding: 0px 10px;
+  object-fit: cover;
+}
+
+header .second_line {
+  margin-bottom: 33px;
+}

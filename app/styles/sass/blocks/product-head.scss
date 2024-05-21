@@ -1,0 +1,17 @@
+.product__wrap {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 18px;
+	margin: 44px 0 39px 0 ;
+}
+.product__wrap-head {
+}
+.head {
+font-size: 1.556em;
+font-weight: 600;
+}
+.goods {
+	color: var(--main-color-hover);
+	font-size: 1em;
+}

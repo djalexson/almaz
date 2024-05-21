@@ -1,0 +1,22 @@
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	font-size: 14px;
+}
+
+.breadcrumbs__item{
+	
+	color: var(	--main-color);
+}
+.breadcrumbs__item--link {
+	color:var(--main-color-hover);
+	text-decoration: none;
+	svg {
+		fill: currentColor;
+	}	
+	&:hover, &:active ,&:focus &:hover svg, &:active svg ,&:focus svg {
+		color:var(	--main-color);
+	}
+}

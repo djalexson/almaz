@@ -2,6 +2,15 @@
 // import '~/app/libs/mmenu/dist/mmenu.js'
 
 document.addEventListener('DOMContentLoaded', () => {
+
+	
+
+	const mySelectWrapper = new SelectWrapper("select", {
+		onChange: (text, value) => {
+				console.log(`Selected text: ${text}, value: ${value}`);
+		}
+});
+
 	var discountsSwiper = new Swiper(".discounts ", {
     loop: true,
     slidesPerView:  1,
