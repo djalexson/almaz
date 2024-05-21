@@ -13,6 +13,10 @@ $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font
 		font-style: $fstyle
 		font-weight: $fweight
 		src: url($furl) format('woff2')
+
+	
+//Quilin
+@include font('Quilin', normal, 400, '../fonts/Quilin/Quilin.woff2')
 // Jost
 @include font('Jost', normal, 100, '../fonts/Jost/Jost-Thin.woff2')
 @include font('Jost', italic, 100, '../fonts/Jost/Jost-ThinItalic.woff2')
@@ -56,7 +60,72 @@ $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font
 @include font('Montserrat', normal, 900, '../fonts/Montserrat/Montserrat-Black.woff2')
 @include font('Montserrat', italic, 900, '../fonts/Montserrat/Montserrat-BlackItalic.woff2')
 
-// GENERAL CSS SETTINGS
+
+// Fivo Sans
+@include font('Fivo Sans', normal, 100, '../fonts/fivoSans/fivosans-thin.woff2')
+@include font('Fivo Sans', oblique, 100, '../fonts/fivoSans/fivosans-thinoblique.woff2')
+@include font('Fivo Sans', normal, 300, '../fonts/fivoSans/fivosans-light.woff2')
+@include font('Fivo Sans', oblique, 300, '../fonts/fivoSans/fivosans-lightoblique.woff2')
+@include font('Fivo Sans', normal, 400, '../fonts/fivoSans/fivosans-regular.woff2')
+@include font('Fivo Sans', oblique, 400, '../fonts/fivoSans/fivosans-oblique.woff2')
+@include font('Fivo Sans', normal, 500, '../fonts/fivoSans/fivosans-medium.woff2')
+@include font('Fivo Sans', oblique, 500, '../fonts/fivoSans/fivosans-mediumoblique.woff2')
+@include font('Fivo Sans', normal, 700, '../fonts/fivoSans/fivosans-bold.woff2')
+@include font('Fivo Sans', oblique, 700, '../fonts/fivoSans/fivosans-boldoblique.woff2')
+@include font('Fivo Sans', normal, 800, '../fonts/fivoSans/fivosans-heavy.woff2') // предполагая что heavy соответствует 800
+@include font('Fivo Sans', oblique, 800, '../fonts/fivoSans/fivosans-heavyoblique.woff2')
+@include font('Fivo Sans', normal, 900, '../fonts/fivoSans/fivosans-black.woff2')
+@include font('Fivo Sans', oblique, 900, '../fonts/fivoSans/fivosans-blackoblique.woff2')
+
+// Exo 2
+@include font('Exo 2', normal, 200, '../fonts/Exo2/Exo2-ExtraLight.woff2')
+@include font('Exo 2', italic, 200, '../fonts/Exo2/Exo2-ExtraLightItalic.woff2')
+@include font('Exo 2', normal, 300, '../fonts/Exo2/Exo2-Light.woff2')
+@include font('Exo 2', italic, 300, '../fonts/Exo2/Exo2-LightItalic.woff2')
+@include font('Exo 2', normal, 400, '../fonts/Exo2/Exo2-Regular.woff2')
+@include font('Exo 2', italic, 400, '../fonts/Exo2/Exo2-Italic.woff2')
+@include font('Exo 2', normal, 500, '../fonts/Exo2/Exo2-Medium.woff2')
+@include font('Exo 2', italic, 500, '../fonts/Exo2/Exo2-MediumItalic.woff2')
+@include font('Exo 2', normal, 600, '../fonts/Exo2/Exo2-SemiBold.woff2')
+@include font('Exo 2', italic, 600, '../fonts/Exo2/Exo2-SemiBoldItalic.woff2')
+@include font('Exo 2', normal, 700, '../fonts/Exo2/Exo2-Bold.woff2')
+@include font('Exo 2', italic, 700, '../fonts/Exo2/Exo2-BoldItalic.woff2')
+@include font('Exo 2', normal, 800, '../fonts/Exo2/Exo2-ExtraBold.woff2')
+@include font('Exo 2', italic, 800, '../fonts/Exo2/Exo2-ExtraBoldItalic.woff2')
+@include font('Exo 2', normal, 900, '../fonts/Exo2/Exo2-Black.woff2')
+@include font('Exo 2', italic, 900, '../fonts/Exo2/Exo2-BlackItalic.woff2')
+// Century Gothic
+@include font('Century Gothic', normal, 400, '../fonts/CenturyGothic/CenturyGothic.woff2')
+@include font('Century Gothic', italic, 400, '../fonts/CenturyGothic/CenturyGothic-Italic.woff2')
+@include font('Century Gothic', normal, 700, '../fonts/CenturyGothic/CenturyGothic-Bold.woff2')
+@include font('Century Gothic', italic, 700, '../fonts/CenturyGothic/CenturyGothic-BoldItalic.woff2')
+//Century School
+@include font('Century School', normal, 700, '../fonts/CenturySchool/CenturySchool-Bold.woff2')
+@include font('Century School', normal, 400, '../fonts/CenturySchool/CenturySchool-Regular.woff2')
+
+// GeologicaRoman
+@include font('GeologicaRoman', normal, 400, '../fonts/Geologica/GeologicaRoman-Regular.woff2')
+@include font('GeologicaRoman', italic, 400, '../fonts/Geologica/GeologicaRoman-Italic.woff2')
+@include font('GeologicaRoman', normal, 500, '../fonts/Geologica/GeologicaRoman-Medium.woff2')
+@include font('GeologicaRoman', italic, 500, '../fonts/Geologica/GeologicaRoman-MediumItalic.woff2')
+@include font('GeologicaRoman', normal, 700, '../fonts/Geologica/GeologicaRoman-Bold.woff2')
+@include font('GeologicaRoman', italic, 700, '../fonts/Geologica/GeologicaRoman-BoldItalic.woff2')
+
+// Geologica
+@include font('Geologica', normal, 400, '../fonts/Geologica/Geologica-Regular.woff2')
+@include font('Geologica', italic, 400, '../fonts/Geologica/Geologica-Italic.woff2')
+@include font('Geologica', normal, 500, '../fonts/Geologica/Geologica-Medium.woff2')
+@include font('Geologica', italic, 500, '../fonts/Geologica/Geologica-MediumItalic.woff2')
+@include font('Geologica', normal, 700, '../fonts/Geologica/Geologica-Bold.woff2')
+@include font('Geologica', italic, 700, '../fonts/Geologica/Geologica-BoldItalic.woff2')
+
+// GeologicaCursive
+@include font('GeologicaCursive', normal, 400, '../fonts/Geologica/GeologicaCursive-Regular.woff2')
+@include font('GeologicaCursive', italic, 400, '../fonts/Geologica/GeologicaCursive-Italic.woff2')
+@include font('GeologicaCursive', normal, 500, '../fonts/Geologica/GeologicaCursive-Medium.woff2')
+@include font('GeologicaCursive', italic, 500, '../fonts/Geologica/GeologicaCursive-MediumItalic.woff2')
+@include font('GeologicaCursive', normal, 700, '../fonts/Geologica/GeologicaCursive-Bold.woff2')
+@include font('GeologicaCursive', italic, 700, '../fonts/Geologica/GeologicaCursive-BoldItalic.woff2')		// GENERAL CSS SETTINGS
 
 ::placeholder
 	color: #666
@@ -81,8 +150,18 @@ body
 	position: relative
 	overflow-x: hidden
 
+// color
 
 $breadcumbs: #808080
 $breadcumbs-active: #000000
 $breadcumbs-bg: #f2f2f2
 $text-dark: rgb(36, 36, 36)
+$white-bg: rgb(255, 255, 255)
+$bage: rgb(98, 199, 82)
+$sale: rgb(119, 81, 218)
+$product-text: rgb(54, 54, 54)
+$product-oldprace: rgb(152, 152, 152)
+$product-discount: rgb(236, 93, 93)
+$product-btn: rgb(255, 249, 87)
+$few: rgb(204, 147, 95)
+$count: rgb(95, 204, 119)

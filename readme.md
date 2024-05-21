@@ -151,7 +151,7 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 
 # новые классы
 
-// .active-cumb
+# header ======================================
 
 // .third_line
 
@@ -172,3 +172,93 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 // header .second_line
 
 // .active-cumb - переключение хлебных крошек
+
+# секция 1 =========================
+
+// .section
+
+// .section-first
+
+// .section\_\_container
+
+// .container
+
+// .section\_\_products
+
+// .\_container-b
+
+// .section\_\_product
+
+// .product
+
+// .product\_\_image
+
+// .product--prev
+
+// .swiper
+
+// .image-slider
+
+// .swiper-container
+
+// .image-slider\_\_wrapper
+
+// .swiper-wrapper
+
+// .image-slaider\_\_slide
+
+// .swiper-slide
+
+// .product\_\_slide
+
+// .image-slider\_\_image
+
+// .product\_\_image-img
+
+// .product\_\_image-bage
+
+// .product\_\_image-sale
+
+// .product\_\_image-schedule
+
+// .swiper-pagination
+
+// .product\_\_description
+
+// .product\_\_rating - родительский класс рейтинга
+
+// .product\_\_rating-item - span c звездочкой
+
+// .product\_\_rating-star
+
+// .product\_\_text
+
+// .product\_\_count
+
+// .product\_\_count-enough - класс добавляется к подписи "Достаочно" в карточке
+
+// .product\_\_count-few - а это если в карточке вместо "Достаочно" используется "Мало"
+
+// .product\_\_price
+
+// .product\_\_price-title
+
+// .product\_\_price-footer
+
+// .product\_\_price-oldprice
+
+// .product\_\_price-discount
+
+// .product\_\_price-btn
+
+// .product\_\_price-btn-theme
+
+// .section\_\_product-additional
+
+// .section\_\_banner
+
+// .section\_\_banner-img
+
+// .section\_\_banner-title
+
+// .section\_\_banner-link

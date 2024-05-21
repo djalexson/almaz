@@ -4,26 +4,26 @@
 }
 @media (max-width: 1440px) {
   .container {
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: 0 auto;
   }
 }
 @media (max-width: 1200px) {
   .container {
-    max-width: 1024px;
+    // max-width: 1024px;
     margin: 0 auto;
     padding: 0 10px;
   }
 }
 @media (max-width: 1024px) {
   .container {
-    max-width: 768px;
+    // max-width: 768px;
     margin: 0 auto;
   }
 }
 @media (max-width: 768px) {
   .container {
-    max-width: 360px;
+    // max-width: 360px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -803,15 +803,19 @@ header .second_line .discount_li a:hover {
     font-size: 11px;
   }
 }
+//правка
+// header .mobile_header {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   left: 0;
+//   max-width: 330px;
+//   width: 100%;
+//   z-index: 3;
+//   margin: auto;
+//   display: none;
+// }
 header .mobile_header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  max-width: 330px;
-  width: 100%;
-  z-index: 3;
-  margin: auto;
   display: none;
 }
 @media (max-width: 768px) {
