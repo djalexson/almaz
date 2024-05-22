@@ -1,0 +1,100 @@
+.filter-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
+}
+
+.filter-buttons {
+	display: flex;
+	gap: 10px;
+}
+
+.filter-button {
+	background-color: #f0f0f0;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.more-button {
+	padding: 10px;
+}
+
+.filter-button:hover {
+	background-color: #d0d0d0;
+}
+
+.filter-section {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.filter-сhapter {
+	font-weight: bold;
+}
+
+.filter-tags {
+	display: flex;
+	gap: 20px;
+}
+
+.filter-tag {
+	border: 2px solid var(--accent);
+	color: var(--accent);
+	padding: 12px 10px;
+	border-radius: var(--bdrs);
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.filter-tag--del  svg{
+	display: inline-block;
+}
+.filter-tag--del {
+	vertical-align: middle;
+}
+.clear-filter {
+	border: none;
+	color: var(--accent);
+	border-radius: var(--bdrs);
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.clear-filter:hover {
+	background-color: #ffcccc;
+}
+
+.filter-options {
+	display: flex;
+	gap: 10px;
+}
+
+
+.store-availability {
+	background-color: #f0f0f0;
+	border: none;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: var(--bdrs);
+	color: var(--accent)	;
+	padding: 4px 20px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	cursor: pointer;
+ transition: var(--animation);
+svg{
+	fill: currentColor;
+ }
+ &:hover, &:active ,&:focus,&:hover {
+	 background-color: #d0d0d050;
+	 
+ }
+}

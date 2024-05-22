@@ -90,6 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
     effect: 'fade',
   });
 
+	const mySelectWrapper = new SelectWrapper("select", {
+		onChange: (text, value) => {
+				console.log(`Selected text: ${text}, value: ${value}`);
+		}
+});
+
   // accardion
 
   const accordionItems = document.querySelectorAll('.accordion__item');

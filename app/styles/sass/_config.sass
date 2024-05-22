@@ -1,6 +1,7 @@
 // USER VARIABLES SECTION
 
-$accent: blue  // Accent Color
+
+$accent: #257AE8  // Accent Color
 $fontsize: 16px // Body Font Size
 //$textcolor: #333 // Text Color
 //$lineheight: 1.65 // Document Line Height
@@ -8,7 +9,12 @@ $userfont: "Montserrat", sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
     
-
+:root
+	--main-color-hover:#808080
+	--main-color:#000000
+	--animation: all 0.2s ease-in-out
+	--accent: #257AE8
+	--bdrs:8px
 @mixin font($fname, $fstyle, $fweight, $furl)
 	@font-face
 		font-family: $fname

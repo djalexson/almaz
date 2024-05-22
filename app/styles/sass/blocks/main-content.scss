@@ -1,8 +1,6 @@
 /*центральный блок с пагинацией*/
 .content-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ 
   margin-bottom: 80px !important;
 }
 
@@ -21,42 +19,36 @@
   &__products {
     display: grid;
     gap: 23px;
-    grid-template-columns: repeat(4, 275px);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: auto;
     margin-bottom: 94px;
     @media (max-width: 1199.9px) {
       & {
-        grid-template-columns: repeat(4, 230px);
-        grid-template-rows: auto;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 20px;
       }
     }
     @media (max-width: 991.9px) {
       & {
-        grid-template-columns: repeat(3, 245px);
-        grid-template-rows: auto;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 15px;
       }
     }
     @media (max-width: 767.9px) {
       & {
-        grid-template-columns: repeat(3, 190px);
-        grid-template-rows: auto;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 10px;
         margin-bottom: 40px;
       }
     }
     @media (max-width: 619.9px) {
       & {
-        grid-template-columns: repeat(2, 230px);
-        grid-template-rows: auto;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
     @media (max-width: 480px) {
       & {
-        grid-template-columns: repeat(2, 155px);
-        grid-template-rows: auto;
-        column-gap: 5px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));        column-gap: 5px;
         margin-bottom: 30px;
       }
     }
@@ -514,10 +506,11 @@
   }
 
   &__wrapper {
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-    margin-bottom: 30px;
+    //  overflow: hidden;
+    // width: 100%;
+    // position: relative;
+     margin-bottom: 30px;
+    // display: flex;
     @media (max-width: 480px) {
       margin-bottom: 0px;
     }
@@ -778,3 +771,10 @@
 .hidden-content {
 }
 /*центральный блок с пагинацией - конец*/
+.section-filters{
+  flex: 1 1 100%;
+}
+.content-article__inner{
+
+ display: flex; 
+}
