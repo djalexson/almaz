@@ -1,0 +1,130 @@
+.favorites {
+  margin-bottom: 32px;
+  &__container {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__header-title {
+    color: $breadcumbs-active;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.7px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  &__header-filters {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    @media (max-width: 767.9px) {
+      justify-content: center;
+    }
+  }
+
+  &__header-btn {
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: $favorites-btn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    color: $breadcumbs-active;
+  }
+
+  &__products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__products-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__products-items {
+    width: 100%;
+  }
+
+  &__products-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+  }
+
+  &__products-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  &__products-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+
+  &__products-desc {
+    width: 40%;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color: $text-dark;
+    margin-bottom: 17px;
+    @media (max-width: 767.9px) {
+      width: 100%;
+    }
+  }
+
+  &__products-price {
+    width: 60%;
+    @media (max-width: 767.9px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__products-oldprice {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    color: $favorites-oldprice;
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
+  }
+
+  &__products-discount {
+    color: $favorites-discount;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration-line: line-through;
+  }
+}

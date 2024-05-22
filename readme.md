@@ -314,3 +314,39 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 .pagination\_\_dots
 
 .pagination\_\_next
+
+# секция favorites под пагинацией
+
+.favorites
+
+.favorites\_\_container
+
+.container
+
+.favorites\_\_header
+
+.favorites\_\_header-title
+
+.favorites\_\_header-filters
+
+.favorites\_\_header-btn
+
+.favorites\_\_products
+
+.favorites\_\_products-title
+
+.favorites\_\_products-items
+
+.favorites\_\_products-item - блок избранного продукта
+
+.favorites\_\_products-img - лебел избранного продукта
+
+.favorites\_\_products-info - блок информации избранного продукта
+
+.favorites\_\_products-desc
+
+.favorites\_\_products-price
+
+.favorites\_\_products-oldprice - цена избранного продукта
+
+.favorites\_\_products-discount - скидка избранного продукта
