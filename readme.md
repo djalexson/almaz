@@ -350,3 +350,29 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 .favorites\_\_products-oldprice - цена избранного продукта
 
 .favorites\_\_products-discount - скидка избранного продукта
+
+# секция accaordion
+
+.accardion-section
+
+.accardion-section\_\_container
+
+.container
+
+.accardion-section\_\_title
+
+.accardion-section\_\_content
+
+.accardion
+
+.accordion\_\_item
+
+.accordion\_\_item_show
+
+.accordion\_\_header
+
+.accardion\_\_caption
+
+.accordion\_\_body
+
+.accardion\_\_icon

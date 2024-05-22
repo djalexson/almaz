@@ -90,6 +90,27 @@ document.addEventListener('DOMContentLoaded', () => {
     effect: 'fade',
   });
 
+  // accardion
+
+  const accordionItems = document.querySelectorAll('.accordion__item');
+
+  accordionItems.forEach((item) => {
+    const header = item.querySelector('.accordion__header');
+    const body = item.querySelector('.accordion__body');
+
+    header.addEventListener('click', function () {
+      const isActive = item.classList.contains('accordion__item_show');
+
+      accordionItems.forEach((accItem) => {
+        accItem.classList.remove('accordion__item_show');
+      });
+
+      if (!isActive) {
+        item.classList.add('accordion__item_show');
+      }
+    });
+  });
+
   //================================================================
 
   var discountsSwiper = new Swiper('.discounts ', {
