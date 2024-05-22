@@ -20,7 +20,7 @@
     position: relative;
     &:after {
       content: '';
-      background: url('../../../images/src/header/mobile-arrow.svg') center /
+      background: url('../../../images/dist/header/mobile-arrow.svg') center /
         cover;
       position: absolute;
       top: 4px;
@@ -73,7 +73,7 @@
 
     &:after {
       content: '';
-      background: url('../../../images/src/header/breadcrumbs.svg') center /
+      background: url('../../../images/dist/header/breadcrumbs.svg') center /
         cover;
       width: 7px;
       height: 12px;

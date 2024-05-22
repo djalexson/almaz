@@ -149,9 +149,7 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 	<li>Long Preprocessor compile: Disable the "safe write" option in PHPStorm/WebStorm settings.</li>
 </ol>
 
-# новые классы
-
-# header ======================================
+# header
 
 // .third_line
 
@@ -173,92 +171,146 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 
 // .active-cumb - переключение хлебных крошек
 
-# секция 1 =========================
+# центральный блок с секциями и пагинацйией
 
-// .section
+.content-article - основной блок
 
-// .section-first
+.section\_\_wrapper
 
-// .section\_\_container
+.section\_\_wrapper-content - блок с секиями
 
-// .container
+.section
 
-// .section\_\_products
+.section-first
 
-// .\_container-b
+.section\_\_container
 
-// .section\_\_product
+.product\_\_wrapper
 
-// .product
+.section\_\_products
 
-// .product\_\_image
+.\_container-b
 
-// .product--prev
+.section\_\_product
 
-// .swiper
+.product
 
-// .image-slider
+.product\_\_image
 
-// .swiper-container
+.product--prev
 
-// .image-slider\_\_wrapper
+.swiper
 
-// .swiper-wrapper
+.image-slider
 
-// .image-slaider\_\_slide
+.swiper-container
 
-// .swiper-slide
+.image-slider\_\_wrapper
 
-// .product\_\_slide
+.swiper-wrapper
 
-// .image-slider\_\_image
+.image-slaider\_\_slide
 
-// .product\_\_image-img
+.swiper-slide
 
-// .product\_\_image-bage
+.product\_\_slide
 
-// .product\_\_image-sale
+.image-slider\_\_image
 
-// .product\_\_image-schedule
+.product\_\_image-img
 
-// .swiper-pagination
+.product\_\_image-bage
 
-// .product\_\_description
+.product\_\_image-sale
 
-// .product\_\_rating - родительский класс рейтинга
+.product\_\_image-schedule
 
-// .product\_\_rating-item - span c звездочкой
+.swiper-pagination
 
-// .product\_\_rating-star
+.product\_\_description
 
-// .product\_\_text
+.product\_\_rating - родительский класс рейтинга
 
-// .product\_\_count
+.product\_\_rating-item - span c звездочкой
 
-// .product\_\_count-enough - класс добавляется к подписи "Достаочно" в карточке
+.product\_\_rating-star
 
-// .product\_\_count-few - а это если в карточке вместо "Достаочно" используется "Мало"
+.product\_\_text
 
-// .product\_\_price
+.product\_\_count
 
-// .product\_\_price-title
+.product\_\_count-enough
 
-// .product\_\_price-footer
+.product\_\_price
 
-// .product\_\_price-oldprice
+.product\_\_price-title
 
-// .product\_\_price-discount
+.product\_\_price-footer
 
-// .product\_\_price-btn
+.product\_\_price-oldprice
 
-// .product\_\_price-btn-theme
+.product\_\_price-discount
 
-// .section\_\_product-additional
+.product\_\_price-btn
 
-// .section\_\_banner
+.product\_\_price-btn-theme
 
-// .section\_\_banner-img
+.product\_\_count-enough - класс добавляется к подписи "Достаочно" в карточке
 
-// .section\_\_banner-title
+.product\_\_count-few - а это если в карточке вместо "Достаочно" используется "Мало"
 
-// .section\_\_banner-link
+.product\_\_count-few
+
+.section\_\_product-additional
+
+.section\_\_banner
+
+.section\_\_banner-img
+
+.section\_\_banner-title
+
+.section\_\_banner-link
+
+.section-second
+
+.section\_\_banner-second
+
+.section\_\_banner-inner
+
+.alert
+
+.alert\_\_title
+
+.alert\_\_text
+
+.alert\_\_link
+
+.section-third
+
+.section-fourth
+
+.section-fifth
+
+.section-sixth
+
+.section-seventh
+
+.section-seventh-img
+
+.hidden-content - блок для скрытого контента кнопки снизу блока
+
+.section\_\_wrapper-button
+
+.pagination
+
+.pagination\_\_arrow
+
+.pagination\_\_prev
+
+.pagination\_\_number
+
+.current-page
+
+.pagination\_\_dots
+
+.pagination\_\_next
